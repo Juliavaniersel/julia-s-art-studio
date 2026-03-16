@@ -6,8 +6,8 @@ const About = () => {
 
         <div className="max-w-[65ch]">
           <p className="text-base leading-relaxed mb-6">
-            Ik ben Julia van Iersel, en ik maak kunst die pas echt af is zodra jij ernaar kijkt. 
-            Mijn grootste drijfveer is de reactie en de waardering van de ander; ik vind het 
+            Ik ben Julia van Iersel, een creatieveling die altijd openstaat voor iets nieuws. 
+            Mijn grootste drijfveer is de reactie van de ander; ik vind het 
             fascinerend als mensen hun eigen verhaal of interpretatie in mijn schilderijen creëren. 
             Juist dan krijgt een werk voor mij waarde.
           </p>
@@ -19,7 +19,7 @@ const About = () => {
             scherpe blik op marketing.
           </p>
           <p className="text-base leading-relaxed mb-6">
-            Door mijn ervaring bij AMAZE Amsterdam en Doloris weet ik hoe je met beeld een sfeer 
+            Door mijn ervaring bij AMAZE Amsterdam en Doloris als content marketeer weet ik hoe je met beeld een sfeer 
             neerzet die mensen écht raakt en overtuigt.
           </p>
           <p className="text-base leading-relaxed">
