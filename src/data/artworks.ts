@@ -4,7 +4,7 @@ import artwork3 from "@/assets/artwork-3.jpg";
 import artwork4 from "@/assets/artwork-4.jpg";
 import artwork5 from "@/assets/artwork-5.jpg";
 import artwork6 from "@/assets/artwork-6.jpg";
-import heroPainting from "@/assets/hero-painting.jpg";
+import heroPainting from "@/assets/hero-painting.jpg.jpg";
 import shopTop1 from "@/assets/shop-top-1.jpg";
 import shopTop2 from "@/assets/shop-top-2.jpg";
 import shopTop3 from "@/assets/shop-top-3.jpg";
