@@ -45,7 +45,12 @@ const Shop = () => {
         <h2 className="text-2xl font-bold mb-4">Stropdas Topjes</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
           {tops.map((item) => (
-            <ShopCard key={item.id} item={item} onClick={() => {/* Stripe checkout placeholder */}} ctaLabel="Kopen" />
+            <ShopCard 
+              key={item.id} 
+              item={item} 
+              onClick={() => window.open(item.shopifyUrl || 'https://necktietop.myshopify.com/', '_blank')} 
+              ctaLabel="Naar Shopify" 
+            />
           ))}
         </div>
 

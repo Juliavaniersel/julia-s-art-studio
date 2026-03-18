@@ -102,6 +102,7 @@ export interface ShopItem {
   views: number;
   date: string;
   isPlaceholder: boolean;
+  shopifyUrl?: string;
 }
 
 export const shopItems: ShopItem[] = [
