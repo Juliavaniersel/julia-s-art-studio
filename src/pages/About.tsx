@@ -1,34 +1,46 @@
+import aboutImage from "@/assets/about-julia.jpg";
+
 const About = () => {
   return (
     <main className="pt-20 min-h-screen">
-      <section className="mx-auto max-w-3xl px-6 py-12">
-        <h1 className="text-4xl font-bold tracking-tight leading-tight mb-8">Over Julia</h1>
+      <section className="mx-auto max-w-5xl px-6 py-12">
+        <h1 className="text-4xl font-bold tracking-tight leading-tight mb-8">About Julia</h1>
 
-        <div className="max-w-[65ch]">
-          <p className="text-base leading-relaxed mb-6">
-            Ik ben Julia van Iersel, een creatieveling die altijd openstaat voor iets nieuws. 
-            Mijn grootste drijfveer is de reactie van de ander; ik vind het 
-            fascinerend als mensen hun eigen verhaal of interpretatie in mijn schilderijen creëren. 
-            Juist dan krijgt een werk voor mij waarde.
-          </p>
-          <p className="text-base leading-relaxed mb-6">
-            Ik wil je prikkelen om verder te kijken dan alleen 'mooi' of 'niet mooi'. 
-            Mijn blik is gevormd tijdens de oriëntatiecursus aan de Gerrit Rietveld Academie, 
-            waar ik leerde op verschillende niveaus naar beeld te kijken. Inmiddels studeer ik 
-            Kunst en Economie aan de HKU (2027) en combineer ik mijn creatieve kant met een 
-            scherpe blik op marketing.
-          </p>
-          <p className="text-base leading-relaxed mb-6">
-            Door mijn ervaring bij AMAZE Amsterdam en Doloris als content marketeer weet ik hoe je met beeld een sfeer 
-            neerzet die mensen écht raakt en overtuigt.
-          </p>
-          <p className="text-base leading-relaxed">
-            Ik ben op mijn best als ik iemands passie, karakter of de sfeer van een ruimte mag 
-            vertalen naar het witte doek. Heb je een lege muur en weet je alleen welke kleur je 
-            mooi vindt? Dan zie ik het als mijn uitdaging om het hele karakter van jou en je huis 
-            te vangen in één schilderij. Iets creëren dat betekenis geeft aan een ruimte, dat is 
-            waar ik voor ga.
-          </p>
+        <div className="flex flex-col md:flex-row gap-12 items-start">
+          <div className="w-full md:w-5/12">
+            <img 
+              src={aboutImage} 
+              alt="Julia van Iersel" 
+              className="w-full h-auto rounded-2xl object-cover shadow-lg aspect-[3/4]"
+            />
+          </div>
+          
+          <div className="w-full md:w-7/12 text-base leading-relaxed space-y-6">
+            <p>
+              I am Julia van Iersel, a creative spirit who is always open to something new. 
+              My biggest drive is the reaction of the other person; I find it 
+              fascinating when people project their own story or interpretation onto my paintings. 
+              That is precisely when a work gains value for me.
+            </p>
+            <p>
+              I want to challenge you to look beyond just 'beautiful' or 'not beautiful'. 
+              My perspective was shaped during the orientation course at the Gerrit Rietveld Academie, 
+              where I learned to look at images on different levels. I am currently studying 
+              Art and Economics at the HKU (2027), combining my creative side with a 
+              sharp eye for marketing.
+            </p>
+            <p>
+              Through my experience as a content marketer at AMAZE Amsterdam and Doloris, I know how to use visuals to set an atmosphere 
+              that truly touches and convinces people.
+            </p>
+            <p>
+              I am at my best when I can translate someone's passion, character, or the atmosphere of a space 
+              onto the blank canvas. Do you have an empty wall and only know which colors you 
+              like? Then I see it as my challenge to capture the full character of you and your home 
+              in one painting. Creating something that gives meaning to a space, that is 
+              what I strive for.
+            </p>
+          </div>
         </div>
       </section>
     </main>

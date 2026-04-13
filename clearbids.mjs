@@ -1,0 +1,1 @@
+import { createClient } from '@supabase/supabase-js'; const supabase = createClient('https://xgzbawqxazinclojbhly.supabase.co', 'sb_publishable_VaQ1TgSD9PTnTEjxF_UBiQ_DGS9dgai'); const run = async () => { console.log('Starting...'); const res = await supabase.from('bids').delete().neq('id', 0); console.log('Done', res); }; run();
