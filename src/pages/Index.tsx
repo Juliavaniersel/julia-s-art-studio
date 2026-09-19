@@ -5,6 +5,8 @@ import PortfolioSidebarTab from "@/components/PortfolioSidebarTab";
 import BusinessCardSidebar from "@/components/BusinessCardSidebar";
 import { toast } from "sonner";
 import { supabase } from "@/lib/supabase";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import emailjs from '@emailjs/browser';
 
 const Index = () => {
@@ -83,6 +85,44 @@ const Index = () => {
     <main className="pt-20 min-h-screen">
       <PortfolioSidebarTab />
       <BusinessCardSidebar />
+
+      {/* "Wat is ze nou weer aan het doen?" Highlight Section */}
+      <section className="relative mx-auto max-w-4xl px-6 pt-12 pb-14 text-center">
+        <div className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase mb-5">
+          Actueel • November 2026
+        </div>
+
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif text-foreground tracking-tight max-w-3xl mx-auto leading-[1.15]">
+          Wat is ze nou weer aan het doen?
+        </h1>
+
+        <blockquote className="mt-6 text-lg sm:text-xl font-serif italic text-muted-foreground max-w-2xl mx-auto">
+          “Ik heb het nog nooit gedaan, dus ik denk dat ik het wel kan.”
+          <span className="block text-sm not-italic font-sans text-foreground/70 mt-1 font-medium">
+            — Pippi Langkous
+          </span>
+        </blockquote>
+
+        <p className="mt-6 text-base sm:text-lg text-foreground/80 font-light leading-relaxed max-w-2xl mx-auto">
+          Op <strong>20 november</strong> geef ik een <strong>croquisavond</strong>, waar ik kunstenaars en beginners samenbreng om een naaktmodel vast te leggen op papier.
+        </p>
+
+        <div className="mt-8 flex items-center justify-center">
+          <Link
+            to="/workshop"
+            className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3.5 font-bold text-primary-foreground shadow-lg hover:scale-105 transition-all duration-200 text-sm tracking-wide uppercase group"
+          >
+            <span>Lees meer</span>
+            <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+          </Link>
+        </div>
+
+        {/* Subtle separator / scroll cue */}
+        <div className="mt-14 flex flex-col items-center gap-2 text-muted-foreground/60">
+          <span className="text-xs uppercase tracking-widest font-semibold">Uitgelicht kunstwerk &amp; Bieden</span>
+          <div className="w-8 h-[1px] bg-border" />
+        </div>
+      </section>
 
       {/* Hero Auction Section */}
       <section className="relative mx-auto max-w-6xl px-6 py-8">
