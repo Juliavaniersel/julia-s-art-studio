@@ -240,14 +240,14 @@ export interface ShopItem {
 
 export const shopItems: ShopItem[] = [
   // Row 1: Stropdas topjes
-  { id: "top-1", title: "NeckTie Top — Blue lila", image: shopTop1, price: 34.99, type: "top", views: 120, date: "2025-01-15", isPlaceholder: false },
-  { id: "top-2", title: "NeckTie Top — Red dark blue", image: shopTop2, price: 34.99, type: "top", views: 95, date: "2025-02-01", isPlaceholder: false },
-  { id: "top-3", title: "NeckTie Top — Orange gray", image: shopTop3, price: 34.99, type: "top", views: 140, date: "2024-12-10", isPlaceholder: false },
+  { id: "top-1", title: "NeckTie Top — Blue lila", image: shopTop1, price: 34.99, type: "top", views: 120, date: "2025-01-15", isPlaceholder: false, externalUrl: "https://www.vinted.nl/items/6152148902-handgemaakte-stropdas-top?referrer=catalog" },
+  { id: "top-2", title: "NeckTie Top — Red dark blue", image: shopTop2, price: 34.99, type: "top", views: 95, date: "2025-02-01", isPlaceholder: false, externalUrl: "https://www.vinted.nl/items/5986254632-handgemaakte-stropdas-top" },
+  { id: "top-3", title: "NeckTie Top — Orange gray", image: shopTop3, price: 34.99, type: "top", views: 140, date: "2024-12-10", isPlaceholder: false, externalUrl: "https://www.vinted.nl/items/5795057603-handgemaakte-stropdas-top" },
   { id: "top-4", title: "NeckTie Top — Multi", image: shopTop4, price: 34.99, type: "top", views: 80, date: "2025-03-01", isPlaceholder: false },
   { id: "top-5", title: "NeckTie Top 5", image: shopTop5, price: 34.99, type: "top", views: 90, date: "2025-03-10", isPlaceholder: false, externalUrl: "https://www.vinted.nl/items/5804270008-handgemaakte-stropdas-top?referrer=catalog" },
-  { id: "top-6", title: "NeckTie Top 6", image: shopTop6, price: 34.99, type: "top", views: 110, date: "2025-03-11", isPlaceholder: false },
+  { id: "top-6", title: "NeckTie Top 6", image: shopTop6, price: 34.99, type: "top", views: 110, date: "2025-03-11", isPlaceholder: false, externalUrl: "https://www.vinted.nl/items/5848699780-handgemaakte-stropdas-top" },
   { id: "top-7", title: "NeckTie Top 7", image: shopTop7, price: 34.99, type: "top", views: 85, date: "2025-03-12", isPlaceholder: false },
-  { id: "top-8", title: "NeckTie Top 8", image: shopTop8, price: 34.99, type: "top", views: 70, date: "2025-03-13", isPlaceholder: false },
+  { id: "top-8", title: "NeckTie Top 8", image: shopTop8, price: 34.99, type: "top", views: 70, date: "2025-03-13", isPlaceholder: false, externalUrl: "https://www.vinted.nl/items/5795074569-handgemaakte-stropdas-top" },
   // Row 2: Available paintings
   ...artworks.filter(a => a.available && a.price).map((a, i) => ({
     id: `paint-${a.id}`,

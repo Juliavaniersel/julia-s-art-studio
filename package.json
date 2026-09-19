@@ -12,7 +12,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist --dotfiles"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -53,6 +53,7 @@
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.36.0",
     "input-otp": "^1.4.2",
+    "jimp": "^1.6.1",
     "lucide-react": "^0.462.0",
     "next-themes": "^0.3.0",
     "react": "^18.3.1",
@@ -95,5 +96,5 @@
     "vite": "^5.4.19",
     "vitest": "^3.2.4"
   },
-  "homepage": "https://Juliavaniersel.github.io/julia-s-art-studio/"
+  "homepage": "https://juliavaniersel.nl"
 }

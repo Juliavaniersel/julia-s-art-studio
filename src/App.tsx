@@ -9,6 +9,7 @@ import Shop from "./pages/Shop";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Vrienden from "./pages/Vrienden";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/vrienden" element={<Vrienden />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </HashRouter>
