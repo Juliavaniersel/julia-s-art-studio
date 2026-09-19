@@ -1,29 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { HandSVG } from "@/components/HandSVG";
 import { ArrowLeft, ExternalLink } from "lucide-react";
-import adamHand from "@/assets/creation-of-adam-hand.png";
-import godHand from "@/assets/god-hand.png";
-
-interface Friend {
-  id: number;
-  name: string;
-  discipline: string;
-  bio: string;
-  link: string;
-  color: string;
-  scale: number;
-  rotation: number;
-}
-
-const friends: Friend[] = [
-  { id: 1, name: "Helena Orion", discipline: "Photography & Visual Poetry", bio: "Working under the name H.ori(z)on, Helena explores the boundaries of landscape and human presence. Her work, characterized by poetic and melancholic imagery, invites the viewer to look beyond the horizon. \"Beyond the crooked horizon breathes a being just like you\" reflects her fascination with the hidden souls in nature and portraits.", link: "https://www.instagram.com/helena.orion/", color: "#E07A5F", scale: 0.9, rotation: -10 },
-  { id: 2, name: "Simon Ruis", discipline: "Illustration & Murals", bio: "Based in Utrecht, Simon is an illustrator and artist known for his clean, colorful, and detailed visual style. He frequently creates illustrations for literary platforms like De Optimist, designs independent publications with Mold Publications, and paints vibrant murals.", link: "https://www.instagram.com/simonruisc/", color: "#F4A261", scale: 1.05, rotation: 5 },
-  { id: 3, name: "Yoram van Leeuwen", discipline: "Visual Arts & Illustration", bio: "Yoram's work explores mystical, abstract, and cosmic themes, often using high-contrast drawings and visual symbolism. Under the handle @yoram_art, he creates atmospheric artwork inspired by cycles of light and darkness, reflecting a fascination with contrast and the quiet mysteries of the night.", link: "https://www.instagram.com/yoram_art/", color: "#E9C46A", scale: 0.95, rotation: -5 },
-  { id: 4, name: "David Wood", discipline: "Woodworking", bio: "Crafts minimalist furniture from reclaimed timber. David believes in letting the material speak, highlighting the natural imperfections and history of each piece of wood.", link: "#", color: "#2A9D8F", scale: 1.1, rotation: 15 },
-  { id: 5, name: "Eva Sculptor", discipline: "Bronze Sculpture", bio: "Explores the human form through dynamic bronze casting. Eva's sculptures capture movement and emotion in solid metal, creating a striking tension.", link: "#", color: "#264653", scale: 0.85, rotation: -15 },
-  { id: 6, name: "Felix Potter", discipline: "Porcelain", bio: "Delicate and translucent porcelain works that challenge the limits of the material. Felix combines traditional wheel-throwing with innovative 3D printing techniques.", link: "#", color: "#8AB17D", scale: 1, rotation: 8 },
-];
+import { friends, juliaHand, Friend } from "@/data/friends";
 
 const Vrienden = () => {
   const [activeFriend, setActiveFriend] = useState<Friend | null>(null);
@@ -77,8 +55,8 @@ const Vrienden = () => {
             style={{ rotate: 0 }}
           >
             <img 
-              src={adamHand} 
-              alt="Adam's Hand" 
+              src={juliaHand} 
+              alt="Julia's Hand" 
               className="w-64 h-auto md:w-80 md:h-auto object-contain drop-shadow-xl select-none"
             />
           </motion.div>
@@ -114,7 +92,7 @@ const Vrienden = () => {
                         className="transition-transform duration-500 group-hover:scale-105"
                       >
                         <img 
-                          src={godHand} 
+                          src={friend.handImage} 
                           alt={friend.name} 
                           className="w-36 h-auto md:w-44 md:h-auto object-contain drop-shadow-md opacity-90 group-hover:opacity-100 transition-opacity select-none" 
                         />
@@ -149,8 +127,8 @@ const Vrienden = () => {
                 className="absolute right-1/2 translate-x-1/2 md:translate-x-0 md:right-0 origin-right z-40 pointer-events-none"
               >
                 <img 
-                  src={godHand} 
-                  alt="Friend Hand" 
+                  src={activeFriend.handImage} 
+                  alt={activeFriend.name + " Hand"} 
                   className="w-64 h-auto md:w-80 md:h-auto object-contain drop-shadow-xl select-none" 
                 />
               </motion.div>
